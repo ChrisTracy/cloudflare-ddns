@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main  # Adjust this if you want to run on a different branch
+    paths-ignore:
+      - 'README.md'
+      - '.github/workflows/**'
 
 jobs:
   docker:
