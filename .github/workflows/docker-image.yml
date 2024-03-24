@@ -25,5 +25,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: yourusername/yourimagename:tag
+          tags: ${{ secrets.DOCKER_USERNAME }}/cloudflare-ddns:latest
           platforms: linux/amd64,linux/arm64,linux/arm/v7
